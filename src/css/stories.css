@@ -129,3 +129,8 @@
 #stories-nav .story3.active a {
 	background:#21588F;
 }
+
+/* ==stories custom== */
+#stories .story {
+	background-image: url('../images/stories/pen.png');
+}

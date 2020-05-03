@@ -73,7 +73,6 @@ export default function Header({ data, location, title, children }) {
 				<div id="navigation">
 					<ol id="nav_main">
 						{_.map(menu, (item) => {
-							console.log("item", item);
 							return (
 								<li
 									className={item.name}
@@ -90,11 +89,6 @@ export default function Header({ data, location, title, children }) {
 					</ol>
 					<div id="spinner">Loading...</div>
 					<Stories />
-					{/* <ol id="stories-nav">
-						<?php foreach( $stories as $index => $stitle): ?>
-						<li class="story story<?php echo $index; ?>"><a href="#story<?php echo $index; ?>"><?php echo $stitle; ?></a></li>
-						<?php endforeach; ?>
-					</ol> */}
 				</div>
 			</div>
 			)
