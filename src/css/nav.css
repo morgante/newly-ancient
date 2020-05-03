@@ -1,0 +1,48 @@
+/* =main_navigation */
+#nav_main, #nav_main li {
+	list-style:none;
+}
+#nav_main, #nav_main li, #nav_main li a {
+	height:100px;
+}
+#nav_main {
+	float:left;
+	width:400px;
+	margin-left: 50px;
+}
+#nav_main li {
+	width:60px;
+	margin-right:20px;
+	float:left;
+}
+#nav_main li:first-child {
+	margin-left:10px;
+}
+#nav_main li:last-child {
+	margin-right:0 !important;
+}
+#nav_main li a, #nav_main li a:link, #nav_main li a:visited {
+	position:relative;
+	top:-8px;
+	display:block;
+	text-align:center;
+	text-decoration:none;
+	color:#333333;
+	font-size:164%;
+	height:100px;
+	width:60px;
+	border-color: #555;
+}
+#nav_main li.active a, #nav_main li a:hover, #nav_main li a:focus {
+	color:#FFFFFF;
+	text-decoration:none;
+	background: #555;
+}
+#nav_main li a span {
+	display:block;
+	position:absolute;
+	left:0;
+	bottom:0;
+	text-align:center;
+	width:60px;
+}

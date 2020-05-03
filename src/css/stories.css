@@ -1,0 +1,131 @@
+/* =stories */
+#storySlider {
+	margin-left:640px;
+/*	width:320px;
+	height:100px;
+	overflow:hidden;
+	position:relative;*/
+}
+
+#stories {
+/*	position:absolute;
+	left:0;
+	top:0;
+	width:10000px;*/
+}
+
+#stories .story {
+	width: 319px;
+	background-color:transparent;
+	background-position:left top;
+	background-repeat:no-repeat;
+	height:100px;
+	float:left;
+	margin:0;
+}
+
+#stories .story div.info {
+	background:url('../images/black-trans.png');
+	height:80px;
+	color:#FFFFFF;
+	position:relative;
+	padding-top:20px;
+}
+#stories .story div.info h3 {
+	font-size:81%;
+	position:absolute;
+	left:0;
+	top:0;
+}
+#stories .story div.info h3 a {
+	background:#333333;
+	border:medium none;
+	color:#CCCCCC;
+	padding:3px 10px;
+	text-transform:uppercase;
+}
+#stories .story div.info a.action {
+	background:#333333;
+	border:medium none;
+	color:#CCCCCC;
+	padding:3px 10px 0px 10px;
+	position:relative;
+	text-transform:uppercase;
+	position:absolute;
+	right:0;
+	bottom:0;
+	font-size:164%;
+}
+#stories .story div.info p {
+	margin:10px 10px 5px 10px;
+	line-height:1.1em;
+	font-size:118%;
+}
+#stories .story.active {
+	display:block;
+}
+#stories .story.story0 div.info h3 a:hover, #stories .story.story0 div.info a.action:hover  {
+	background:#D42629;
+}
+#stories .story.story1 div.info h3 a:hover, #stories .story.story1 div.info a.action:hover  {
+	background:#7A3B79;
+}
+#stories .story.story2 div.info h3 a:hover, #stories .story.story2 div.info a.action:hover  {
+	background:#21588F;
+}
+#stories .story.story3 div.info h3 a:hover, #stories .story.story3 div.info a.action:hover  {
+	background:#499948;
+}
+
+/* ==stories nav== */
+#stories-nav, #stories-nav li {
+	list-style:none;
+}
+#stories-nav {
+	position:absolute;
+	right:0;
+	bottom:-25px;
+	width:320px;
+	height:25px;
+}
+#stories-nav li {
+	float:left;
+	width:60px;
+	height:25px;
+	margin:0 10px;
+}
+#stories-nav li a {
+	display:block;
+	line-height:25px;
+	text-align:center;
+	color:#FFFFFF;
+	text-decoration:none;
+	font-size:118%;
+}
+#stories-nav li a:hover {
+	text-decoration:underline;
+}
+#stories-nav .story0 a:hover {
+	background:#941B1E;
+}
+#stories-nav .story0.active a {
+	background:#D42629;
+}
+#stories-nav .story1 a:hover {
+	background:#336B32;
+}
+#stories-nav .story1.active a {
+	background:#499948;
+}
+#stories-nav .story2 a:hover {
+	background:#552955;
+}
+#stories-nav .story2.active a {
+	background:#7A3B79;
+}
+#stories-nav .story3 a:hover {
+	background:#173E64;
+}
+#stories-nav .story3.active a {
+	background:#21588F;
+}
