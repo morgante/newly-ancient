@@ -35,11 +35,11 @@
 	background-color:#7A3B79;
 }
 /* blue: #21588F */
-#nav_main li.poetry a {
+#nav_main li.writing a {
 	border-color:#21588F !important;
 }
 
-#nav_main li.poetry a.active, #nav_main li.poetry a:hover, #nav_main li.poetry a:focus {
+#nav_main li.writing a.active, #nav_main li.writing a:hover, #nav_main li.writing a:focus {
 	background-color:#21588F;
 }
 
@@ -1084,7 +1084,7 @@ div.pager, #archive_title {
 
 div.pager a.previous, div.pager a.next, div.pager span.previous a, div.pager span.next a {
 	display:block;
-	padding:2px 5px;
+	padding:0px 5px;
 	color:#FFF;
 	width:140px;
 }
@@ -1315,7 +1315,7 @@ div.single div.post div.field.tags li {
 	display:block;
 	float:left;
 	position:relative;
-	padding-left:18px;
+	padding-right:18px;
 }
 div.single div.post div.field.tags li a.global {
 	display:block;
@@ -2053,7 +2053,7 @@ div.module.mosaic.life ol li a:hover {
 	margin-left:10px;
 }
 
-.page.main .content {
+.page.main.static .content {
 	margin:10px 10px;
 	font-size:125%;
 	line-height: 1.5em;
