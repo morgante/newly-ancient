@@ -1,0 +1,19 @@
+My friend Joe Thibault recently emailed me about a new site he has started with Sean Behan (a crackerjack Ruby programmer). Their site, called PostLearn, is essentially an affiliate job board for education. While I wish them success in their endeavor, I won’t be joining as I believe this model suffers from a couple of major flaws.
+
+PostLearn affiliate graph
+The greatest flaw is immediately visible from the affiliate graph: one site drives a vastly disproportionate amount of the traffic; Free Technology for Teachers alone accounts for over 90% of the traffic, and consequently will receive far more affiliate revenue. Except it will probably receive all of the revenue. In an affiliate model, there is a certain base amount of traffic required before you can get a single sale, a minimum that I doubt many of the others on the long tail (including yours truly) would reach. Effectively, the entire pot of affiliate money is controlled by a tiny oligarchy of sites.
+
+This would be acceptable (it’s a free market, after all) were it not for the fundamental flaws in the Internet economy. This flawed economy is controlled by a small oligarchy of noisemakers. This oligarchy isn’t particularly hard to enter: just abandon journalistic ethics and post lists of the top n ways to write lists.1 Boom! Traffic.
+
+Unsurprisingly, just as in the larger Internet, the most popular PostLearn affiliate simply rehashes merit-less news stories and tips.2 Looking down the page, lo and behold, we find a list of the aforementioned variety. Sadly, this content is rewarded far more generously than potentially more deserving comment.
+
+Google AdSense grants us some slight freedom from this paradigm by democratizing advertising. Though the most trafficked sites still receive the vast majority of the revenue, smaller sites do share in some of the revenue, potentially enough to offset minimal publishing expenses. In this way, Google AdSense resembles most modern democracies: while the elite still maintain most of the power, the little guy does get a small voice. It’s not perfect, but it’s better than an oligarchy of the unthinking elite.
+
+However, we can do one better with a meritocracy. Rather than being a detriment, advertising can be a force for good on the web. Fusion Ads and The Deck are prime examples of this. Instead of rewarding breadth of content, these networks focus on finding blogs which consistently post material with depth. By handpicking their members these networks ironically end up leveling the playing field and giving quality content a chance to shine. I truly believe this is the advertising model that will save the web.3
+
+With that in mind, I offer this challenge to Joe and Sean: devise an advertising platform which will improve the quality of the edublogosphere. In my opinion, such a model should observe three crucial principles:
+
+Popularity doesn’t necessarily correlate with merit. Meaningful blogs with strong reader relationships will, in the end, provide greater long-term benefit.
+Be selective. The quality of small, niche groups is more easily controllable, making them more marketable.
+Know the audience. Most readers are going to be job seekers (teachers) not job posters. The billing and payment strategy should reflect this.
+Whether they choose to implement these ideas or not, I wish Joe and Sean the best of luck and look forward to their response.
