@@ -46,7 +46,7 @@ export default class Stories extends React.Component {
 
     const goSlideLink = (num) => {
       return (evt) => {
-        console.log('clicked', evt);
+        evt.preventDefault();
         this.setState({ value: num });
       }
     }

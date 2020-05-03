@@ -5,7 +5,7 @@ import "../css/layout.css"
 
 import Header from "./header"
 
-const Layout = ({ location, title, children }) => {
+const Layout = ({ location, children }) => {
   return (
     <div>
       <div id="grid_overlay">
@@ -15,8 +15,12 @@ const Layout = ({ location, title, children }) => {
       <div id="page">
         <Header
           location={location}
-          title={title}
           children={children} />
+          <div id="content" className="content main page">
+            <div className="content">
+            {children}
+            </div>
+          </div>
       </div>
     </div>
   )

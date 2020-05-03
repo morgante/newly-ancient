@@ -8,7 +8,7 @@ import Stories from "./stories";
 
 import "../../css/nav.css"
 
-export default function Header({ data, location, title, children }) {
+export default function Header({ location, children }) {
 	const rootPath = `${__PATH_PREFIX__}/`;
 
 	const stories = [
@@ -51,7 +51,6 @@ export default function Header({ data, location, title, children }) {
     `}
     render={data => {
 			const menu = data.site.siteMetadata.menuLinks;
-			console.log('data', data, menu);
 			return (
 				<div id="header" className="section">
 					<div id="branding">

@@ -33,7 +33,7 @@
 	width:60px;
 	border-color: #555;
 }
-#nav_main li.active a, #nav_main li a:hover, #nav_main li a:focus {
+#nav_main li a.active, #nav_main li a:hover, #nav_main li a:focus {
 	color:#FFFFFF;
 	text-decoration:none;
 	background: #555;

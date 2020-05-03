@@ -6,7 +6,7 @@
 #branding h1 a:hover, #branding h1 a:focus {
 	color:#D42629 !important;
 }
-#nav_main li.about.active a, #nav_main li.about a:hover, #nav_main li.about a:focus {
+#nav_main li.about a.active, #nav_main li.about a:hover, #nav_main li.about a:focus {
 	background-color:#D42629;
 }
 /* orange: #F5A133 */
@@ -16,7 +16,7 @@
 #branding h1 a:hover span.ancient, #branding h1 a:focus span.ancient, #branding div.box a.subscribe:hover, #branding div.box a.subscribe:focus {
 	color:#F5A133 !important;
 }
-#nav_main li.archive.active a, #nav_main li.archive a:hover, #nav_main li.archive a:focus {
+#nav_main li.archive a.active, #nav_main li.archive a:hover, #nav_main li.archive a:focus {
 	background-color:#F5A133;
 }
 /* green: #499948 */
@@ -24,14 +24,14 @@
 	border-color:#499948 !important;
 }
 
-#nav_main li.blog.active a, #nav_main li.blog a:hover, #nav_main li.blog a:focus {
+#nav_main li.blog a.active, #nav_main li.blog a:hover, #nav_main li.blog a:focus {
 	background-color:#499948;
 }
 /* purple: #7A3B79 */
 #nav_main li.life a {
 	border-color:#7A3B79 !important;
 }
-#nav_main li.life.active a, #nav_main li.life a:hover, #nav_main li.life a:focus {
+#nav_main li.life a.active, #nav_main li.life a:hover, #nav_main li.life a:focus {
 	background-color:#7A3B79;
 }
 /* blue: #21588F */
@@ -39,7 +39,7 @@
 	border-color:#21588F !important;
 }
 
-#nav_main li.poetry.active a, #nav_main li.poetry a:hover, #nav_main li.poetry a:focus {
+#nav_main li.poetry a.active, #nav_main li.poetry a:hover, #nav_main li.poetry a:focus {
 	background-color:#21588F;
 }
 
@@ -510,7 +510,7 @@ div.module.feeds a.subscribe {
 	text-decoration:none !important;
 }
 
-.module.navlinks ul li.active a {
+.module.navlinks ul li a.active {
 	background:#9A9A9A;
 	color:#FFF !important;
 }
@@ -2056,6 +2056,7 @@ div.module.mosaic.life ol li a:hover {
 .page.main .content {
 	margin:10px 10px;
 	font-size:125%;
+	line-height: 1.5em;
 }
 
 .page.main .content p {
@@ -2064,7 +2065,7 @@ div.module.mosaic.life ol li a:hover {
 
 /* meta pages */
 .page.meta h3 {
-	margin:5px 10px;
+	margin:5px 0;
 	font-size:145%;
 }
 
@@ -2072,32 +2073,32 @@ div.module.mosaic.life ol li a:hover {
 	font-size:130%;
 }
 
-.page.meta .content {
+.page.meta.content {
 	margin:5px 10px;
 	font-size:118%;
 }
 
-.page.meta .content p {
+.page.meta.content p {
 	margin-bottom:20px;
 }
 
-.page.meta .content p.intro {
+.page.meta.content p.intro {
 	font-size:110%;
 }
 
-.page.meta .content a, .page.meta .content a:link, .page.meta .content a:visited {
+.page.meta.content a, .page.meta.content a:link, .page.meta.content a:visited {
 	color:#499948;
 	text-decoration:none;
 }
 
-.page.meta .content a:hover, .page.meta .content a:focus {
+.page.meta.content a:hover, .page.meta.content a:focus {
 	text-decoration:underline;
 	color:#E20011;
 }
-.page.meta .content ol {
+.page.meta.content ol {
 	margin:10px 10px 20px 20px;
 }
-.page.meta .content ol, .page.meta .content ol li {
+.page.meta.content ol, .page.meta .content ol li {
 	list-style:decimal;	
 }
 /* 404 page */
