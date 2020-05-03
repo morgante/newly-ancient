@@ -6,11 +6,13 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const BlogIndex = ({ data, location }) => {
+  const siteTitle = data.site.siteMetadata.title
   const posts = data.allMarkdownRemark.edges
 
   return (
-    <Layout location={location}>
+    <Layout location={location} title={siteTitle}>
       <SEO title="All posts" />
+      <Bio />
       {posts.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug
         return (
