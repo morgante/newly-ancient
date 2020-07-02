@@ -1,5 +1,5 @@
 # History
-This site is a recreation of my [original blog](https://web.archive.org/web/20150515000000*/newlyancient.com),
+This site is a recreation of my [original blog](https://web.archive.org/web/20150111171055/http://newlyancient.com/),
 which used a custom [theme](https://github.com/morgante/shield) for [Habari](https://en.wikipedia.org/wiki/Habari).
 
 
