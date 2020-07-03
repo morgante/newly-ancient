@@ -1,4 +1,5 @@
 const fs = require('fs');
+const path = require('path');
 const cheerio = require('cheerio');
 
 const patterns = {
@@ -6,14 +7,30 @@ const patterns = {
 };
 
 const PATHS = {
-  new_blog: "import/blog"
+  old_raw: "import/old_raw/",
+  new_blog: "content/blog"
 };
 
 function importBlog(fileName) {
   const html = fs.readFileSync(fileName, {encoding:'utf8', flag:'r'}); 
   const $ = cheerio.load(html);
   const contents = $(".content.single .post .field.content .value").html();
-  console.log(fileName, contents);
+  const slug = path.basename(path.dirname(fileName));
+
+  const newFileContents = `---
+title: test
+date: "2009-09-25T12:02:03.284Z"
+tags: [education, advertising, finance]
+---
+
+${contents}
+`;
+
+  const newDir = path.join(PATHS.new_blog, slug);
+  fs.mkdirSync(newDir, { recursive: true });
+
+  fs.writeFileSync(path.join(newDir, "index.md"), newFileContents);
+  console.log(fileName, slug);
 }
 
 function importFile(fileName) {
@@ -22,7 +39,7 @@ function importFile(fileName) {
   }
 }
 
-function importDir(dir, filelist) {
+function importDir(dir) {
   const files = fs.readdirSync(dir);
   files.forEach(function(file) {
     if (fs.statSync(dir + file).isDirectory()) {
@@ -34,4 +51,4 @@ function importDir(dir, filelist) {
 }
 
 console.log("RUN IT");
-importDir("import/old_raw/");
+importDir(PATHS.old_raw);
