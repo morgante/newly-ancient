@@ -1,0 +1,330 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	
+	<title>Newly Ancient &middot; Spiped + SSH = Secure Proxy</title>
+	<meta name="generator" content="Habari">
+	
+		
+	<link rel="edit" type="application/atom+xml" title="Atom Publishing Protocol" href="http://newlyancient.com/atom">
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://newlyancient.com/rsd">
+	
+	<link rel="icon" type="image/ico" href="http://newlyancient.com/favicon.ico" />
+	
+	<link rel="alternate" type="application/atom+xml" title="Atom 1.0" href="http://newlyancient.com/spiped-ssh-secure-proxy/atom"><link rel="service" type="application/atomsvc+xml" title="Atom Publishing Protocol" href="http://newlyancient.com/atom"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://newlyancient.com/rsd">
+<link type="text/css" media="screen" rel="stylesheet" href="http://newlyancient.com/user/themes/shield/css/style.css">
+<link type="text/css" media="screen" rel="stylesheet" href="http://newlyancient.com/user/themes/shield/jtheme/ui.all.css">
+<style type="text/css" media="screen">body { background-image: url('http://newlyancient.com/user/themes/shield/images/backgrounds/flower_1.jpg')}</style>
+
+<script  src="http://newlyancient.com/system/vendor/jquery.js"></script>
+<script  src="http://newlyancient.com/system/vendor/jquery-ui.min.js"></script>
+<script  src="http://newlyancient.com/user/themes/shield/js/miranda.js"></script>
+<script  src="http://newlyancient.com/user/themes/shield/js/main.js"></script>
+		
+</head>
+<body class="left blog newly-ancient logo">
+<div id="grid_overlay">
+	<div class="grid">&nbsp;</div>
+</div>
+<div id="borders">
+&nbsp;
+</div>
+<div id="page">
+	<div id="header" class="section">
+		<div id="branding">
+			<h1>
+				<a href="http://newlyancient.com" title="Pick up your heart at home">
+				<img src="http://dl.dropbox.com/u/190441/images/na-logo.jpg" />				<span class="newly">Newly</span> <span class="ancient">Ancient</span>				</a>
+			</h1>
+			<div class="box">
+				<a class="ninerules" href="http://9rules.com" title="I am a member of the 9rules blog community">9rules</a>				<a class="subscribe" href="http://newlyancient.com/atom/1" title="Subscribe to latest posts">Subscribe</a>
+				<div id="search" class="habari internal">
+										<form method="get" id="searchform" action="http://newlyancient.com/search"><div>
+				    	<label for="s">Search:</label>
+						<input type="text" id="s" name="criteria" value="">
+						<input type="submit" id="searchsubmit" value="Go!">
+					</div></form>
+				</div>
+			</div>
+		</div>
+		<div id="navigation">
+			<ol id="nav_main">
+								<li class="blog"><a href="http://newlyancient.com"><span>Blog</span></a></li>
+								<li class="about"><a href="http://newlyancient.com/about"><span>About</span></a></li>
+								<li class="writing"><a href="http://newlyancient.com/writing"><span>Writing</span></a></li>
+											</ol>
+			<div id="spinner">Loading...</div>
+			<ol id="stories">
+				<li class="story story0 block-type-story block-title-hire-me block" id="story0" style="background-image:url('http://newlyancient.com/user/files/random/money.png');">
+	<div class="info">
+		<h3><a href="http://mastermade.us" class="section">Hire Me</a></h3>
+		<p>Like this site? Want one like it? Help me pay the hosting for this site while getting one of your own! Explore other projects I have created and see if I would be a good fit for your team.</p>
+		<a class="action" href="http://mastermade.us">&rarr;</a>
+	</div>
+</li><li class="story story1 index_1 block-type-story block-title-microblog block" id="story1" style="background-image:url('http://newlyancient.com/user/files/random/stream.png');">
+	<div class="info">
+		<h3><a href="http://newlyancient.com/micro/" class="section">Microblog</a></h3>
+		<p>Though I no longer post on Twitter, you can still float down my stream of consciousness. Just follow me on my new adventure.</p>
+		<a class="action" href="http://newlyancient.com/micro/">&rarr;</a>
+	</div>
+</li><li class="story story2 index_2 block-type-story block-title-elsewhere block" id="story2" style="background-image:url('http://newlyancient.com/user/files/random/pencils.png');">
+	<div class="info">
+		<h3><a href="http://morgante.net" class="section">Elsewhere</a></h3>
+		<p>Writing isn't the only thing I do, and now you can find out what other mischief I am up to. At my central hub, you'll find my bio and links to other shenanigans, including my programming lab.
+</p>
+		<a class="action" href="http://morgante.net">&rarr;</a>
+	</div>
+</li><li class="story story3 index_3 block-type-story block-title-writing block" id="story3" style="background-image:url('http://newlyancient.com/user/files/random/pen.png');">
+	<div class="info">
+		<h3><a href="http://newlyancient.com/writing" class="section">Writing</a></h3>
+		<p>Prose isn't my only master. Through poetry and informal writings, I follow my creative muse—wherever she may lead me.</p>
+		<a class="action" href="http://newlyancient.com/writing">&rarr;</a>
+	</div>
+</li>			</ol>
+			<ol id="stories-nav">
+								<li class="story story0"><a href="#story0">Hire Me</a></li>
+								<li class="story story1"><a href="#story1">Microblog</a></li>
+								<li class="story story2"><a href="#story2">Elsewhere</a></li>
+								<li class="story story3"><a href="#story3">Writing</a></li>
+							</ol>
+		</div>
+	</div>	<div id="content" class="content primary single">
+		<div class="pager entry single">
+			<a class="previous" href="http://newlyancient.com/2013/11/19/hackny" title="Read My HackNY Application">&laquo; <strong>Previous</strong></a>					</div>
+			<div id="post-229" class="post published">
+				<div class="field title info">
+					<div class="label">Title</div>
+					<div class="value"><h3 class="title"><a href="http://newlyancient.com/2014/04/09/spiped-ssh-secure-proxy" title="Permalink">Spiped + <span class="caps">SSH</span> = Secure&nbsp;Proxy</a></h3></div>
+				</div>
+				
+				<div class="field date time info">
+					<div class="label">Timestamp</div>
+					<div class="value">
+						Published at
+						<abbr class="time" title="4:00 pm on April 9th, 2014">04:00 PM</abbr>
+						on
+						<span class="date">
+							<a href="http://newlyancient.com/2014/04" title="Read more posts from April 2014">April</a>
+							<a href="http://newlyancient.com/2014/04/09" title="Read more posts from April 9, 2014">9</a>,
+							<a href="http://newlyancient.com/2014" title="Read more posts from 2014">2014</a>
+						</span>
+					</div>
+				</div>
+				<div class="field comments info">
+					<div class="label">Comments</div>
+					<div class="value">
+						There are						<a href="http://newlyancient.com/2014/04/09/spiped-ssh-secure-proxy#comments">2 comments</a>
+						on this post. Add <a class="comment add" href="http://newlyancient.com/2014/04/09/spiped-ssh-secure-proxy#respond" title="Add a comment to this post">yours</a>.
+					</div>
+				</div>
+								<div class="field tags info">
+					<div class="label">Tags</div>
+					<div class="value">
+						<ul>							<li><a class="global" href="http://technorati.com/tag/technical" rel="tag">[technorati]</a><a class="site" href="http://newlyancient.com/tag/{$tag}" rel="tag" title="View more posts tagged &lsquo;technical&rsquo;">technical</a>,&nbsp; </li>
+														<li><a class="global" href="http://technorati.com/tag/security" rel="tag">[technorati]</a><a class="site" href="http://newlyancient.com/tag/1" rel="tag" title="View more posts tagged &lsquo;security&rsquo;">security</a>, and&nbsp; </li>
+														<li><a class="global" href="http://technorati.com/tag/spiped" rel="tag">[technorati]</a><a class="site" href="http://newlyancient.com/tag/2" rel="tag" title="View more posts tagged &lsquo;spiped&rsquo;">spiped</a></li>
+													</ul>
+					</div>
+				</div>
+								
+								
+								<div class="field content">
+					<div class="label">Content</div>
+					<div class="value">
+						<p>Recently, I&#8217;ve been getting more concerned in security. As an American living in a Middle Eastern <em>monarchy</em>, multiple government agencies are likely monitoring my internet traffic—not to mention that I frequently connect to servers from sketchy internet cafes while traveling in the developing world. To mitigate these risks, I proxy all my traffic through a secure server—but with the recent <a href="http://www.vox.com/2014/4/8/5593654/heartbleed-explainer-big-new-web-security-flaw-compromise-privacy">heartbleed bug</a>, I decided to step my security up a&nbsp;notch.</p>
+
+<p>Now, all traffic is routed through <a href="http://www.tarsnap.com/spiped.html">spiped</a>, a simple and secure utility. Using Docker, I&#8217;ve automated most of the setup for this system, so you can easily route your traffic securely as&nbsp;well.</p>
+
+<h3>Server&nbsp;Setup</h3>
+
+<p>Setting up the server for this is quite simple, assuming you have <a href="http://docker.io">Docker</a>&nbsp;installed.</p>
+
+<ol>
+<li>
+<p>Clone my Dockerfile, which handles setting up a Socks proxy (with <span class="caps">SSH</span>) and the spiped&nbsp;server.</p>
+
+<p><code>git clone https://github.com/morgante/spiped-docker&nbsp;/home/spiped</code></p>
+</li>
+<li>
+<p>Enter the spiped directory, where the magic&nbsp;happens:</p>
+
+<p><code>cd&nbsp;/home/spiped</code></p>
+</li>
+<li>
+<p>Generate a secure key for the spiped socket to use for communication across the&nbsp;internet.</p>
+
+<p><code>dd if=/dev/urandom bs=32 count=1&nbsp;of=spiped.key</code></p>
+</li>
+<li>
+<p>Build the Docker image (it will automatically load the key you just&nbsp;generated)</p>
+
+<p><code>docker build -t spiped&nbsp;.</code></p>
+</li>
+<li>
+<p>Start the spiped server with&nbsp;Docker:</p>
+
+<p><code>docker run -d -p 49168:8089 -t&nbsp;spiped</code></p>
+</li>
+</ol><p>You now have a fully functional <span class="caps">SOCKS</span> proxy listening on port 49168 and secured using a private&nbsp;key.</p>
+
+<h3>Client&nbsp;Setup</h3>
+
+<p>On the client, all you need to do is installed spiped and connect to the server. These instructions are for <span class="caps">OS</span> X, but the process should be similar for other operating&nbsp;systems.</p>
+
+<ol>
+<li>
+<p>Install spiped (with&nbsp;<a href="http://brew.sh">Homebrew</a>).</p>
+<p><code>brew install&nbsp;spiped</code></p>
+</li>
+<li>
+<p>Copy the private key from your&nbsp;server.</p>
+<p><code>scp username@server.name:/home/spiped/spiped.key&nbsp;~/spiped.key</code></p>
+</li>
+<li>
+<p>Start the spiped&nbsp;client:</p>
+
+<p><code>spiped -e -s '[0.0.0.0]:8089' -t '[107.170.94.89]:49168' -k&nbsp;~/spiped.key</code></p>
+</li>
+<li>In System Preferences, configure your network to connect to a <span class="caps">SOCKS</span> proxy at&nbsp;<strong>localhost:8089</strong>.</li>
+</ol><p>Now all your internet activity is securely routed through your server. If you want to automate this slightly more, I have written a very simple <a href="https://github.com/morgante/dotfiles/blob/master/home/.tunnel-start">start&nbsp;script</a>.</p>
+
+<p>In my experience, the spiped tunnel is highly reliable and recovers more gracefully than a standard <span class="caps">SSH</span>&nbsp;tunnel.</p>
+
+<p>Leave any questions in the comments and I&#8217;ll do my best to&nbsp;answer.</p>					</div>
+				</div>
+							</div>
+						<div id="comments" class="comments post single pseudize">
+				<div class="field heading">
+					<div class="label"><h4>Comments</h4></div>
+					<div class="value">
+						There are						<strong>2</strong>
+						comments on this post. You can add your own
+						<a class="comment add" href="http://newlyancient.com/2014/04/09/spiped-ssh-secure-proxy#respond" title="Add a comment to this post">below</a>.
+					</div>
+				</div>
+				<div id="comment-16867" class="comment approved scheme1 number1 type-comment">
+	<div class="field name">
+		<div class="label">Name</div>
+		<div class="value"><h5><a href="http://bango29.com/" title="Visit the site of Batista Harahap">Batista&nbsp;Harahap</a></h5></div>
+	</div>
+	<div class="field url">
+		<div class="label">Site</div>
+		<div class="value"><a href="http://bango29.com/" title="Visit the site of Batista Harahap">http://bango29.com/</a></div>
+	</div>	<div class="field date time info">
+		<div class="label">Timestamp</div>
+		<div class="value">
+			<a class="time" title="10:55 pm on April 9th, 2014" href="http://newlyancient.com/2014/04/09/spiped-ssh-secure-proxy#comment-16867"><strong>10:55 PM</strong>
+			on
+			<strong>April 9, 2014</strong></a>
+		</div>
+	</div>
+	<div class="field content">
+		<div class="label">Content</div>
+		<div class="value">
+			I like that you use Docker to automate.
+
+Noticing that the solution is a <span class="caps">SOCKS</span> proxy, <span class="caps">DNS</span> will still be using whatever <span class="caps">DNS</span> your current network assigned to you&nbsp;right?		</div>
+	</div>
+</div><div id="comment-16868" class="comment approved scheme2 number2 type-comment">
+	<div class="field name">
+		<div class="label">Name</div>
+		<div class="value"><h5>Nathan</h5></div>
+	</div>
+		<div class="field date time info">
+		<div class="label">Timestamp</div>
+		<div class="value">
+			<a class="time" title="2:04 am on April 10th, 2014" href="http://newlyancient.com/2014/04/09/spiped-ssh-secure-proxy#comment-16868"><strong>2:04 AM</strong>
+			on
+			<strong>April 10, 2014</strong></a>
+		</div>
+	</div>
+	<div class="field content">
+		<div class="label">Content</div>
+		<div class="value">
+			<span class="caps">SOCKS</span> proxy-ing has  been built into openssh for years.  Why complicate it?
+
+ssh -D 8089 107.170.94.89
+
+Now you have a  socks proxy on 127.0.0.1:8089, with all connections leaving via the 107.170.94.89 host.&nbsp;Enjoy		</div>
+	</div>
+</div>				<div id="comment-preview" class="comment preview scheme2" style="display:none;">
+					<div class="field name namecontainer">
+						<div class="label">Name</div>
+						<div class="value"><h5 class="nameholder">NAME</h5></div>
+					</div>
+					<div class="field url urlcontainer">
+						<div class="label">Site</div>
+						<div class="value"><h5><a href="http://url.com" class="urlholder">URL</a></h5></div>
+					</div>
+					<div class="field date time info">
+						<div class="label">Timestamp</div>
+						<div class="value">
+							<abbr class="time" title="3:15 am on January 8th, 2015">3:15 AM</abbr>
+							on
+							<strong>January 8, 2015</strong>
+						</div>
+					</div>
+					<div class="field content comment-contentcontainer">
+						<div class="label">Content</div>
+						<div class="value comment-contentholder">CONTENT</div>
+					</div>
+				</div>
+			</div>
+						
+			<div id="respond" class="post respond single scheme3">
+				<div class="field heading">
+					<div class="label"><h4>Respond</h4></div>
+					<div class="value">
+					<p>Respond to this entry with your remarkable insights.</p></div>
+				</div>
+				<form  class="formui public commentform" id="comment-public" action="http://newlyancient.com/229/3dd8ae8e98/feedback" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8" method="POST">
+<input type="hidden" name="FormUI" value="23056d6095147cd9ea53614139c35145">
+<script type="text/javascript">if(controls==undefined){var controls = {init:function(fn){if(fn!=undefined){controls.inits.push(fn);}else{for(var i in controls.inits){controls.inits[i]();}}},inits:[]};}</script><script type="text/javascript">window.setTimeout(function(){controls.init();}, 500);</script><div class="field info text cf_commenter required">
+	<div class="label"><label for="comment_name">Name</label> <strong class="required">(Required)</strong></div>
+	<div class="value"><input type="text" name="comment_name" id="comment_name" value="" size="22" tabindex="1"></div>
+		</div><div class="field info text cf_email required helped">
+	<div class="label"><label for="comment_email">Email</label> <strong class="required">(Required)</strong></div>
+	<div class="value"><input type="text" name="comment_email" id="comment_email" value="" size="22" tabindex="2"></div>
+		<div class="help"><p><em>(will not be published)</em></p></div></div><div class="field info text cf_url">
+	<div class="label"><label for="comment_url">Website</label></div>
+	<div class="value"><input type="text" name="comment_url" id="comment_url" value="" size="22" tabindex="3"></div>
+		</div><div class="field info textarea cf_content required">
+	<div class="label">
+		<label for="comment_content">Response</label>
+					</div>
+	<div class="value">
+		<textarea name="comment_content" id="comment_content" cols="100" rows="10" tabindex="4"></textarea>
+	</div>
+</div><div class="field info text cf_submit">
+	<div class="label"><label for="ce0d8b4d">Post</label></div>
+	<div class="value"><input type="submit" name="ce0d8b4d" id="ce0d8b4d" value="Post" tabindex="5"></div>
+		</div></form>
+			</div>
+			<div class="pager entry single">
+				<a class="previous" href="http://newlyancient.com/2013/11/19/hackny" title="Read My HackNY Application">&laquo; <strong>Previous</strong></a>							</div>
+	</div>
+	<div id="sidebar" class="content secondary home pseudize">
+		<div class="module recent posts entries">
+	<h3>Latest Entries</h3>
+	<a class="feed" href="http://newlyancient.com/atom/1" title="Atom feed of latest entires"></a>
+	<ol class="items entries">
+			<li class="item">
+			<a class="permalink" href="http://newlyancient.com/2014/04/09/spiped-ssh-secure-proxy" title="Posted at 4:00 pm on April 9th, 2014">
+				<span class="title">Spiped + SSH = Secure Proxy</span>
+				<span class="date">Apr 9</span>
+			</a>
+			<a href="http://newlyancient.com/2014/04/09/spiped-ssh-secure-proxy#comments" class="comments count" title="2 comments">2</a>
+		</li>
+			<li class="item">
+			<a class="permalink" href="http://newlyancient.com/2013/11/19/hackny" title="Posted at 1:13 am on November 19th, 2013">
+				<span class="title">My HackNY Application</span>
+				<span class="date">Nov 19</span>
+			</a>
+			<a href="http://newlyancient.com/2013/11/19/hackny#comments" class="comments count" title="<br />
+<b>Fatal error</b>:  Allowed memory size of 94371840 bytes exhausted (tried to allocate 75 bytes) in <b>/home/arthus/newlyancient/prod/system/classes/comment.php</b> on line <b>80</b><br />
+<pre class="error">
+<b>Error:</b> Allowed memory size of 94371840 bytes exhausted (tried to allocate 75 bytes) in system/classes/comment.php line 80
+</pre>
