@@ -14,13 +14,11 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
   const tags = post.frontmatter.tags || [];
   const footnotes = post.frontmatter.footnotes || [];
 
-  console.log("permalink", data, location);
-
   return (
     <Layout location={location}>
       <SEO
         title={post.frontmatter.title}
-        description={post.frontmatter.description || post.excerpt}
+        description={post.frontmatter.description || post.excerpt || ""}
       />
       <div id="content" className="content primary single">
         <div className="pager entry single">
@@ -105,7 +103,6 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
-        description
         tags
         footnotes
       }

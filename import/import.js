@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const cheerio = require('cheerio');
+const pretty = require('pretty');
 
 const patterns = {
   BLOG: /\/\d\d\d\d\/\d\d\/\d\d\/([\w\d-]+)\/index.html/gi
@@ -18,12 +19,12 @@ function importBlog(fileName) {
   const slug = path.basename(path.dirname(fileName));
 
   const newFileContents = `---
-title: test
+title: "${slug}"
 date: "2009-09-25T12:02:03.284Z"
 tags: [education, advertising, finance]
 ---
 
-${contents}
+${pretty(contents)}
 `;
 
   const newDir = path.join(PATHS.new_blog, slug);
