@@ -1,12 +1,8 @@
 #!/bin/sh
 
-# rm -rf old_raw/*
+rm -rf old_raw_2/*
 
-# wayback_machine_downloader http://newlyancient.com/ \
-#   -d old_raw/ \
-#   --to 20150111171055 \
-#   -c 20 \
-
-mkdir -p old_useful/
-
-cp old_raw/*/*/*/*/index.html old_useful/*
+wayback_machine_downloader http://newlyancient.com/ \
+  -d old_raw_2/ \
+  --to 20150111171055 \
+  -c 20 \
